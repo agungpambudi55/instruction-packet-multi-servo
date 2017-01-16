@@ -1,0 +1,5 @@
+# Instruction Packet Multi Servo
+This project uses a modified servo library, so that the speed can be adjusted and can run simultaneously without using additional libraries such as RTOS or multi-threading. This instruction packet is made to facilitate commands from the central controller using only 1 serial communication line.
+
+## Experimental Result
+The testing was carried out on Arduino Pro Micro with 5 Micro Servo Tower Pro MG90S, where the receiver board received data from Dynamixel with 3 cables (Data, VDD, Gnd), of course with the addition of stepdown voltage and the same baudrate value as Dynamixel. The experimental results are very satisfying working as expected, moving together at the command of a central controller. The command has parameters such as only 1 servo or multi servo to be controlled, determine the degree position goal, and the speed of change of the degree position goal.
